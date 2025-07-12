@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+.main {
+    background-image: url("image.png");
+    width: 100%;
+    height: 97vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    position: relative;
+}
+
+.box {
+    filter: opacity(80%) brightness(50%);
+    width: 100%;
+    height: 97vh;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    width: 10vw;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+button {
+    color: white;
+    background-color: rgb(109, 109, 109);
+    padding: 6px;
+    width: 100px;
+}
+
+.nav {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.herotext {
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.start {
+    height: 60px;
+    width: 12vw;
+    background-color: rgb(211, 10, 10);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.nav button {
+    position: relative;
+    z-index: 30;
+}
+
+.signin {
+    background-color: rgb(211, 10, 10);
+    color: white;
+    width: 5vw;
+    border-radius: 5px;
+    height: 32px;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.email {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    height: 58px;
+    width: 350px;
+    background-color: rgba(39, 39, 39, 0.445);
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: rgb(225, 225, 225);
+    font-size: medium;
+    padding-left: 20px;
+}
+
+.eng {
+    background-color: rgba(48, 48, 48, 0.427);
+    border: 0.2px solid grey;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    height: 32px;
+    width: 110px;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.line {
+    height: 3px;
+    background-color: rgba(173, 54, 163, 0.479);
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.trending {
+    /* height: 100vh; */
+    width: 80vw;
+    margin: auto;
+    /* background-color: black; */
+    color: white;
+    padding-top: 100px;
+}
+
+.showbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    /* margin-left: 20px; */
+    /* overflow: scroll; */
+}
+
+.trendshow {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: flex-end;
+}
+
+.trendingtext {
+    font-family: "Aleo", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 80px;
+    font-style: normal;
+}
+
+.trendshow>img{
+    border-radius: 8px;
+}
+
+.reasons{
+    width: 80vw;
+    margin: auto;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.reasonboxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.reasonbox{
+    width: 300px;
+    height: 250px;
+    background-color: rgba(42, 25, 103, 0.283);
+    margin-top: 20px;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.greyfont{
+    color: rgb(186, 186, 186);
+    font-weight: 500;
+}
+
+.reasonimg{
+    height: 60px;
+    width: 60px;
+    align-self: flex-end;
+    margin-top: 42px;
+    margin-right: 24px;
+    filter: grayscale(100);
+}
+
+.profilepng{
+    margin-top: 0;
+}
+
+.downloadpng{
+    margin-top: 0;
+}
+
+.watchpng{
+    margin-top: 50px;
+}
+/* .hue{
+    width: 100%;
+    margin: -50px;
+    position: relative;
+    z-index: 40;
+    background-color: black;
+} */
+/* .herobg{
+    width: 100%;
+    height: 97vh;
+    position: absolute;
+}
+
+.herotext{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form{
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+    width: 20vw;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 1px;
+    border: 1px solid gray;
+}
+
+.nav{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    width: 10vw;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+button{
+    color: white;
+    padding: 6px;
+    width: 100px;
+} */
