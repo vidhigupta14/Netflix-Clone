@@ -10,7 +10,7 @@ Thumbs.db
 *.avi
 *.webm
 *.jpg
-*.png
+# *.png
 
 # Node.js stuff (if you're using npm)
 node_modules/
