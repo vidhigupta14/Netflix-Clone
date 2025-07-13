@@ -13,7 +13,8 @@
     height: 97vh;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1600px, 100vw);
+    /* background-size: max(1600px, 100vw); */
+    background-size: cover;
     position: relative;
 }
 
@@ -53,7 +54,7 @@ button {
 
 .herotext {
     color: white;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -62,15 +63,17 @@ button {
     height: 80vh;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    width: 80vw;
+    margin: auto;
 }
 
 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 48px;
 }
 
 h4 {
@@ -105,7 +108,7 @@ h5 {
 
 .start {
     height: 60px;
-    width: 12vw;
+    width: 160px;
     background-color: rgb(211, 10, 10);
     border: none;
     border-radius: 4px;
@@ -122,7 +125,7 @@ h5 {
 .signin {
     background-color: rgb(211, 10, 10);
     color: white;
-    width: 5vw;
+    width: 80px;
     border-radius: 5px;
     height: 32px;
     border: none;
@@ -192,6 +195,8 @@ h5 {
     align-items: center;
     gap: 15px;
     margin-top: 30px;
+    overflow: scroll;
+    scrollbar-width: none;
     /* margin-left: 20px; */
     /* overflow: scroll; */
 }
@@ -231,18 +236,19 @@ h5 {
 
 .reasonboxes {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .reasonbox {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 240px;
     background-color: rgba(42, 25, 103, 0.283);
     margin-top: 20px;
     border-radius: 12px;
-    padding-top: 30px;
+    padding-top: 24px;
     padding-left: 20px;
     padding-right: 24px;
     display: flex;
@@ -291,6 +297,7 @@ h5 {
     color: white;
     padding-top: 100px;
     padding-bottom: 70px;
+    overflow: hidden;
 }
 
 .custom-select {
@@ -305,11 +312,19 @@ h5 {
     color: white;
     border: none;
     /* margin-bottom: 20px; */
-
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: none;
+}
+
+.custom-select option {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .quesbox {
@@ -349,14 +364,14 @@ h5 {
     color: gray;
 }
 
-.faq-col{
+.faq-col {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: gray;
 }
 
-.quick-links{
+.quick-links {
     padding-top: 50px;
     width: 80vw;
     margin: auto;
@@ -364,22 +379,23 @@ h5 {
     /* justify-content: space-between; */
     gap: 150px;
     padding-bottom: 60px;
+    flex-wrap: wrap;
 }
 
-.btn img{
+.btn img {
     height: 16px;
     width: 16px;
     /* filter: grayscale(100%) brightness(100%); */
 }
 
-button{
+button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 }
 
-.end-btn{
+.end-btn {
     width: 80vw;
     margin: auto;
     align-items: center;
@@ -387,7 +403,7 @@ button{
     padding-bottom: 60px;
 }
 
-.footer-sign{
+.footer-sign {
     width: 80vw;
     margin: auto;
     display: flex;
@@ -396,6 +412,9 @@ button{
     color: gray;
     padding-bottom: 200px;
 }
+
+
+
 /* .hue{
     width: 100%;
     margin: -50px;
