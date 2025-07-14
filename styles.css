@@ -265,10 +265,12 @@ h5 {
     height: 60px;
     width: 60px;
     align-self: flex-end;
-    /* margin-top: 22px; */
+    margin-top: 18px;
     /* margin-right: 24px; */
     filter: grayscale(100);
 }
+
+
 
 /* .profilepng {
     margin-top: -8px;
@@ -306,6 +308,7 @@ h5 {
     margin: auto;
     word-wrap: break-word;
     padding-left: 20px;
+    padding-right: 2.5rem;
     font-size: 24px;
     font-weight: 500;
     background-color: rgb(50, 50, 50);
@@ -352,6 +355,7 @@ h5 {
     align-items: center;
     gap: 20px;
     padding-bottom: 70px;
+    text-align: center;
 }
 
 .end-email input {
@@ -413,6 +417,49 @@ button {
     padding-bottom: 200px;
 }
 
+@media screen and (max-width: 550px) {
+    h1{
+        font-size: 32px;
+    }
+
+    input{
+        max-width: 250px;
+    }
+
+    .start{
+        font-size: 18px;
+        width: 128px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    input{
+        max-height: 44px;
+        max-width: 200px;
+    }
+
+    .start{
+        max-height: 45px;
+        font-size: 16px;
+        width: 110px;
+    }
+
+    .end-email input{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .end-email input{
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .end-email input{
+        max-width: 250px;
+    }
+}
 
 
 /* .hue{
